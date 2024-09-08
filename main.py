@@ -1,5 +1,6 @@
-from narration import video_to_narrate, NARRATION_STYLES
-from webcam import record_video  # Import the record_video function
+from narration import video_to_narrate
+from narration_styles import NARRATION_STYLES 
+from webcam import record_video
 
 def main():
     # Ask user if they want to use an existing file or record a new one
