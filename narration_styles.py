@@ -2,6 +2,7 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv('secrets.env')
+
 NARRATION_STYLES = {
     "david_attenborough": {
         "prompt": """

@@ -56,7 +56,43 @@ To run the project, execute:
 
 python main.py
 
+## How to add new narration character
 
+To add a new narration character:
+
+1. Obtain a new voice ID from Eleven Labs:
+   a. Go to [Eleven Labs](https://elevenlabs.io/) -> voices -> add a new voice -> instant voice cloning
+   b. Upload 1-minute of voice recording & give it a name 
+   c. Hit "Add voice"
+   d. Go to [Eleven Labs API documentation](https://elevenlabs.io/docs/api-reference/get-voices)
+   e. In the "Get voices" function, add your API key in the header and hit send
+   f. The API will return a list of voices. Scroll to the end and find your voice recording along with its voice_id
+
+2. Add the new voice ID to your `secrets.env` file:
+   ```
+   NEW_CHARACTER_VOICE_ID=your_new_character_voice_id_here
+   ```
+
+3. Update the `narration_styles.py` file to include the new character:
+   - Add a new entry to the `NARRATION_STYLES` dictionary:
+     ```python
+     NARRATION_STYLES = {
+         # ... existing entries ...
+         "new_character": {
+             "prompt": """
+     These are frames from a video.
+     Generate a [New Character] style narration for this video.
+     [Add specific instructions for the character's style]
+     Only return the actual narration that will be read, no other text or comments.
+     """,
+             "voice_id": os.environ["NEW_CHARACTER_VOICE_ID"]
+         }
+     }
+     ```
+   - Replace `"new_character"` with the actual name of your character
+   - Customize the prompt to match the character's style
+
+4. Test the new character by running `python main.py` and selecting the new character from the available options.
 
 ## Contributing
 
