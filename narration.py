@@ -10,9 +10,6 @@ from elevenlabs.client import ElevenLabs
 
 load_dotenv('secrets.env')
 
-# Usage example:
-# video_path = "assets/dan_coffee.mp4"
-# base64Frames = process_video(video_path)
 
 
 def process_video(video_path):
