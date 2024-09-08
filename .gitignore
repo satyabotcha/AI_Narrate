@@ -1,0 +1,12 @@
+# Ignore secrets.env file
+secrets.env
+
+# Ignore assets folder
+assets/
+
+# Ignore venv folder
+new_venv/
+
+
+.DS_Store
+
