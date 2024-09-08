@@ -61,12 +61,13 @@ python main.py
 To add a new narration character:
 
 1. Obtain a new voice ID from Eleven Labs:
-   a. Go to [Eleven Labs](https://elevenlabs.io/) -> voices -> add a new voice -> instant voice cloning
-   b. Upload 1-minute of voice recording & give it a name 
-   c. Hit "Add voice"
-   d. Go to [Eleven Labs API documentation](https://elevenlabs.io/docs/api-reference/get-voices)
-   e. In the "Get voices" function, add your API key in the header and hit send
-   f. The API will return a list of voices. Scroll to the end and find your voice recording along with its voice_id
+   - Go to [Eleven Labs](https://elevenlabs.io/) and navigate to "Voices"
+   - Select "Add voice" and choose "Instant voice cloning"
+   - Upload a 1-minute voice recording and name it
+   - Click "Add voice"
+   - Visit the [Eleven Labs API documentation](https://elevenlabs.io/docs/api-reference/get-voices)
+   - In the "Get voices" function, add your API key to the header and send the request
+   - Find your new voice recording in the returned list of voices and note its `voice_id`
 
 2. Add the new voice ID to your `secrets.env` file:
    ```
