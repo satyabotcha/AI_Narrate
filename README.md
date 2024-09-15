@@ -7,6 +7,9 @@ This package uses OpenAI for video analysis and script generation, and Eleven La
 
 ## Demo
 
+https://github.com/user-attachments/assets/887f3f7f-16c0-4365-a7dc-e455eb2ffc1f
+
+
 
 
 **Disclaimer:** The creator of this software does not take any responsibility for any copyright infringement that may occur through its use. Users are responsible for ensuring they have the necessary rights and permissions for any content they use or create with this tool.
