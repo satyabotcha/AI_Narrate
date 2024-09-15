@@ -1,4 +1,4 @@
-# From Homer to Morpheus: The Ultimate AI Voice Overkill"
+# From Homer to Morpheus: The Ultimate AI Voice Overkill
 
 A Python-based project for narrating videos using famous character voices. This package allows you to narrate either uploaded videos or live webcam footage using the voices of Homer Simpson, Morpheus (from The Matrix), or David Attenborough.
 
@@ -6,7 +6,7 @@ This package uses OpenAI for video analysis and script generation, and Eleven La
 
 
 ## Demo
-![Demo Video](demo/video.mp4)
+
 
 
 **Disclaimer:** The creator of this software does not take any responsibility for any copyright infringement that may occur through its use. Users are responsible for ensuring they have the necessary rights and permissions for any content they use or create with this tool.
